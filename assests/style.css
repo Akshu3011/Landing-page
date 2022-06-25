@@ -57,7 +57,7 @@ img
 main
 {
     background: #ffffff;
-    border-bottom:8px solid #7D6868;
+    border-bottom:8px solid var(--border);
     
 }
 p{
@@ -98,7 +98,14 @@ form
     margin-top: 0;
     padding: 10px;
     
-    
+}
+
+label{
+    padding: 10px;
+}
+input{
+    padding: 5px;
+    margin-bottom: 10px;
 }
 #button {
     background-color: var(--background);
