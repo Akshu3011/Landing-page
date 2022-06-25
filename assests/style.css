@@ -1,18 +1,31 @@
+*
+{
+    --background: #a2a8d3;
+    --dark: #38598b;
+    --light:#e7eaf6;
+    --border:#113f67;
+
+}
+
 body{
-   background: #FCE5CD;
+   background: var(--light);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 0%;
     margin: 0%;
+    --dark: #38598b;
+    --light:#e7eaf6;
+    --border:#113f67;
+
 }
 header
 {
-    background: #00573F;
-    color: #ffffff;
+    background: var(--dark);
+    color: var(--light);
     position: fixed;
     top: 0;
     margin:  0 auto;
     width: 100%;
-    border-bottom:8px solid #7D6868;
+    border-bottom:8px solid var(--border);
 }
 ul
 {
@@ -25,6 +38,12 @@ li
     display:inline-block;
     padding: 8px;
     color: white;    
+}
+a
+{
+   text-decoration: none;
+   padding: 8px;
+    color: white;  
 }
 img
 {
@@ -47,11 +66,11 @@ p{
     
 }
 .data{
-    border: 5px solid #7D6868;
+    border: 5px solid var(--border);
     margin-left: 50px;
     margin-right:50px;
     border-radius: 10px;
-    background: #FCE5CD;
+    background: var(--light);
 }
 
 h1{
@@ -69,25 +88,25 @@ h2{
 
 form
 {
-    background: #FCE5CD;
-    border: 5px solid #7D6868;
+    background: var(--background);
+    border: 5px solid var(--border);
     width: 600px;
     height: auto;
     border-radius: 10px;
     text-align: center;
-    margin-left: 650px;
+    margin-left: 33%;
     margin-top: 0;
     padding: 10px;
     
     
 }
 #button {
-    background-color: #332211; /* Green */
+    background-color: var(--background);
     border: none;
     color: white;
     padding: 10px 29px;
     border-style: double;
-    border-color: burlywood;
+    border-color: var(--border);
     text-align: center;
     text-decoration: solid;
     display: inline-block;
@@ -101,11 +120,11 @@ section
 }
 footer
 {
-    background: #00573F;
+    background: var(--dark);
     color: #ffffff;
     position: fixed;
     bottom: 0;
     top: auto;
     width: 100%; 
-    border-bottom:8px solid #7D6868;
+    border-top:8px solid var(--border);
 }
